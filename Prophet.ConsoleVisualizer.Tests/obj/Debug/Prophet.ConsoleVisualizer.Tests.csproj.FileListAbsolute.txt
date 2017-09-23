@@ -1,0 +1,15 @@
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\Prophet.ConsoleVisualizer.Tests.dll
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\Prophet.ConsoleVisualizer.Tests.pdb
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\Castle.Core.dll
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\Moq.dll
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\nunit.framework.dll
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\Prophet.ConsoleVisualizer.dll
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\Prophet.Core.dll
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\Prophet.ConsoleVisualizer.pdb
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\Prophet.Core.pdb
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\Moq.pdb
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\Moq.xml
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\bin\Debug\nunit.framework.xml
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\obj\Debug\Prophet.ConsoleVisualizer.Tests.csprojResolveAssemblyReference.cache
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\obj\Debug\Prophet.ConsoleVisualizer.Tests.dll
+E:\projects\Prophet\Prophet.ConsoleVisualizer.Tests\obj\Debug\Prophet.ConsoleVisualizer.Tests.pdb

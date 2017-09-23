@@ -1,0 +1,5 @@
+E:\projects\Prophet\Prophet.SceneEditor\bin\Debug\Prophet.SceneEditor.exe
+E:\projects\Prophet\Prophet.SceneEditor\bin\Debug\Prophet.SceneEditor.pdb
+E:\projects\Prophet\Prophet.SceneEditor\obj\Debug\Prophet.SceneEditor.csprojResolveAssemblyReference.cache
+E:\projects\Prophet\Prophet.SceneEditor\obj\Debug\Prophet.SceneEditor.exe
+E:\projects\Prophet\Prophet.SceneEditor\obj\Debug\Prophet.SceneEditor.pdb

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RIDER_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer.Tests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Prophet.Core" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Prophet.Game" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Prophet.SceneEditor" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer.Tests/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer.Tests/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.Core/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.Core/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.Game/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.Game/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.SceneEditor/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.SceneEditor/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../packages" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

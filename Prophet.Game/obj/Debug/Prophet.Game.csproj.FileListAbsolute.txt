@@ -1,0 +1,9 @@
+E:\projects\Prophet\Prophet.Game\obj\Debug\Prophet.Game.csprojResolveAssemblyReference.cache
+E:\projects\Prophet\Prophet.Game\bin\Debug\Prophet.Game.exe
+E:\projects\Prophet\Prophet.Game\bin\Debug\Prophet.Game.pdb
+E:\projects\Prophet\Prophet.Game\bin\Debug\Prophet.ConsoleVisualizer.dll
+E:\projects\Prophet\Prophet.Game\bin\Debug\Prophet.Core.dll
+E:\projects\Prophet\Prophet.Game\bin\Debug\Prophet.ConsoleVisualizer.pdb
+E:\projects\Prophet\Prophet.Game\bin\Debug\Prophet.Core.pdb
+E:\projects\Prophet\Prophet.Game\obj\Debug\Prophet.Game.exe
+E:\projects\Prophet\Prophet.Game\obj\Debug\Prophet.Game.pdb
