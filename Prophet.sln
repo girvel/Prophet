@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prophet.ConsoleVisualizer",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prophet.ConsoleVisualizer.Tests", "Prophet.ConsoleVisualizer.Tests\Prophet.ConsoleVisualizer.Tests.csproj", "{9A27D8BA-3451-45C2-B2D5-F71A75073A7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prophet.Core.Tests", "Prophet.Core.Tests\Prophet.Core.Tests.csproj", "{72414A0A-C042-4865-A50C-AFD0F5BDBE0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9A27D8BA-3451-45C2-B2D5-F71A75073A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A27D8BA-3451-45C2-B2D5-F71A75073A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A27D8BA-3451-45C2-B2D5-F71A75073A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72414A0A-C042-4865-A50C-AFD0F5BDBE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72414A0A-C042-4865-A50C-AFD0F5BDBE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72414A0A-C042-4865-A50C-AFD0F5BDBE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72414A0A-C042-4865-A50C-AFD0F5BDBE0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
