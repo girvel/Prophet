@@ -25,32 +25,31 @@ namespace Prophet.ConsoleVisualizer.Tests
             
             #endregion
 
-            var scene = Mock.Of<Scene>();
-            scene.Characters = new[,,]
-            {
-                {{character}, {null}, {null}},
-                {{null},      {null}, {null}},
-                {{character}, {null}, {character}},
-            };
+            var scene = new Mock<Scene>();
+            scene
+                .Setup(s => s.GetCharacterAt(It.IsAny<Vector3>()))
+                .Returns((Vector3 position) => (position == new Vector3(2, 2, 0)) ? character : null);
 
-            scene.Decorations = new[,,]
-            {
-                {{decoration}, {decoration}, {decoration}},
-                {{decoration}, {decoration}, {decoration}},
-                {{decoration}, {decoration}, {decoration}},
-            };
+            scene
+                .SetupGet(s => s.Decorations)
+                .Returns(new[,,]
+                {
+                    {{decoration}, {decoration}, {decoration}},
+                    {{decoration}, {decoration}, {decoration}},
+                    {{decoration}, {decoration}, {decoration}},
+                });
             
             var view = new View
             {
-                Position = new Vector(2, 1), 
-                Size = new Vector(1, 2),
+                Position = new Vector2(2, 1), 
+                Size = new Vector2(1, 2),
                 Height = 0,
             };
             
             
             // act
             
-            var result = view.GetCurrentView(scene, filler);
+            var result = view.GetCurrentView(scene.Object, filler);
             
             
             // assert

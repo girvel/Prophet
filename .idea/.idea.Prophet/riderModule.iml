@@ -5,12 +5,15 @@
       <sourceFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer.Tests" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../Prophet.Core" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Prophet.Core.Tests" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../Prophet.Game" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../Prophet.SceneEditor" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer.Tests/bin" />
       <excludeFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer.Tests/obj" />
       <excludeFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer/bin" />
       <excludeFolder url="file://$MODULE_DIR$/../../Prophet.ConsoleVisualizer/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.Core.Tests/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Prophet.Core.Tests/obj" />
       <excludeFolder url="file://$MODULE_DIR$/../../Prophet.Core/bin" />
       <excludeFolder url="file://$MODULE_DIR$/../../Prophet.Core/obj" />
       <excludeFolder url="file://$MODULE_DIR$/../../Prophet.Game/bin" />

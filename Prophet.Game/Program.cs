@@ -35,7 +35,7 @@ namespace Prophet.Game
                 },
             };
 
-            var view = new View {Position = new Vector(0, 0), Size = new Vector(50, 10)};
+            var view = new View {Position = new Vector2(0, 0), Size = new Vector2(50, 10)};
             new ConsoleViewer().Display(view.GetCurrentView(scene, filler));
             Console.ReadKey();
         }

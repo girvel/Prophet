@@ -1,0 +1,13 @@
+E:\projects\Prophet\Prophet.Core.Tests\bin\Debug\Prophet.Core.Tests.dll
+E:\projects\Prophet\Prophet.Core.Tests\bin\Debug\Prophet.Core.Tests.pdb
+E:\projects\Prophet\Prophet.Core.Tests\bin\Debug\Moq.dll
+E:\projects\Prophet\Prophet.Core.Tests\bin\Debug\nunit.framework.dll
+E:\projects\Prophet\Prophet.Core.Tests\bin\Debug\Prophet.Core.dll
+E:\projects\Prophet\Prophet.Core.Tests\bin\Debug\Prophet.Core.pdb
+E:\projects\Prophet\Prophet.Core.Tests\bin\Debug\Moq.pdb
+E:\projects\Prophet\Prophet.Core.Tests\bin\Debug\Moq.xml
+E:\projects\Prophet\Prophet.Core.Tests\bin\Debug\nunit.framework.xml
+E:\projects\Prophet\Prophet.Core.Tests\obj\Debug\Prophet.Core.Tests.csprojResolveAssemblyReference.cache
+E:\projects\Prophet\Prophet.Core.Tests\obj\Debug\Prophet.Core.Tests.dll
+E:\projects\Prophet\Prophet.Core.Tests\obj\Debug\Prophet.Core.Tests.pdb
+E:\projects\Prophet\Prophet.Core.Tests\bin\Debug\Castle.Core.dll

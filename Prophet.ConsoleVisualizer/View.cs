@@ -5,9 +5,9 @@ namespace Prophet.ConsoleVisualizer
 {
     public class View
     {
-        public Vector Position { get; set; }
+        public Vector2 Position { get; set; }
         
-        public Vector Size { get; set; }
+        public Vector2 Size { get; set; }
         
         public int Height { get; set; }
 
@@ -30,7 +30,7 @@ namespace Prophet.ConsoleVisualizer
                 else
                 {
                     result[x, y] 
-                        = scene.Characters[ax, ay, Height]?.Appearance 
+                        = scene.GetCharacterAt(new Vector3(ax, ay, Height))?.Appearance 
                           ?? scene.Decorations[ax, ay, Height]?.Appearance 
                           ?? filler;
                 }
