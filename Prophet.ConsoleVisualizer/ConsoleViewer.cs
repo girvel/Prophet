@@ -7,16 +7,16 @@ namespace Prophet.ConsoleVisualizer
     {
         public void Display(ColoredCharacter[,] view)
         {
-            Console.SetWindowSize(view.GetLength(0), view.GetLength(1));
+            Console.SetWindowSize(view.GetLength(0), view.GetLength(1) + 1);
             
             if (view.GetLength(0) > Console.BufferWidth)
             {
                 Console.BufferWidth = view.GetLength(0);
             }
             
-            if (view.GetLength(0) > Console.BufferWidth)
+            if (view.GetLength(1) + 1 > Console.BufferHeight)
             {
-                Console.BufferWidth = view.GetLength(0);
+                Console.BufferHeight = view.GetLength(1) + 1;
             }
 
             for (var y = 0; y < view.GetLength(1); y++)

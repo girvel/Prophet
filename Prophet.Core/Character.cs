@@ -16,5 +16,16 @@ namespace Prophet.Core
         {
             Behaviour.Step(this);
         }
+
+        public virtual bool TryMove(Vector3 to)
+        {
+            if (Scene.TryMoveCharacter(this, to))
+            {
+                Position = to;
+                return true;
+            }
+            
+            return false;
+        }
     }
 }

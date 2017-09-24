@@ -92,43 +92,12 @@ namespace Prophet.Core.Tests
             scene.InitializeLandscape(new Vector3(1, 1, 1));
             
             // act
-            var result = scene.IsPlaceFree(new Vector3(1, 0, 0));
+            var result1 = scene.IsPlaceFree(new Vector3(1, 0, 0));
+            var result2 = scene.IsPlaceFree(new Vector3(-1, 0, 0));
             
             // assert
-            Assert.IsFalse(result);
-        }
-        
-        [Test]
-        public void TryMoveCharacter_ReturnsFalseWhenThereIsNoPlace()
-        {
-            // arrange
-            var character = new Character();
-            var scene = new Scene();
-            scene.InitializeLandscape(new Vector3(1, 1, 1));
-            scene.AddCharacter(character);
-            
-            // act
-            var result = scene.TryMoveCharacter(character, new Vector3(1, 2, 3));
-            
-            // assert
-            Assert.IsFalse(result);
-        }
-
-        [Test]
-        public void TryMoveCharacter_ReturnsTrueAndMovesCharacterWhenItIsPossible()
-        {
-            // arrange
-            var character = new Character();
-            var scene = new Scene();
-            scene.InitializeLandscape(new Vector3(4, 4, 4));
-            scene.AddCharacter(character);
-            
-            // act
-            var result = scene.TryMoveCharacter(character, new Vector3(1, 2, 3));
-            
-            // assert
-            Assert.IsTrue(result);
-            Assert.AreEqual(character, scene.GetCharacterAt(new Vector3(1, 2, 3)));
+            Assert.IsFalse(result1);
+            Assert.IsFalse(result2);
         }
 
         [Test]

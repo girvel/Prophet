@@ -21,8 +21,12 @@ namespace Prophet.Core
 
         public virtual bool IsPlaceFree(Vector3 position)
         {
-            return position.X < _characters.GetLength(0)
+            return position.X >= 0
+                   && position.Y >= 0
+                   && position.Z >= 0
+                   && position.X < _characters.GetLength(0)
                    && position.Y < _characters.GetLength(1)
+                   && position.Z < _characters.GetLength(2)
                    && GetCharacterAt(position) == null;
         }
         
@@ -52,7 +56,7 @@ namespace Prophet.Core
         private void SetCharacterAt(Vector3 position, Character value) 
             => _characters[position.X, position.Y, position.Z] = value;
 
-        public virtual bool TryMoveCharacter(Character character, Vector3 to)
+        internal virtual bool TryMoveCharacter(Character character, Vector3 to)
         {
             if (!IsPlaceFree(to))
             {
@@ -72,7 +76,8 @@ namespace Prophet.Core
 
         public virtual void Step()
         {
-            foreach (var character in _characters.OfType<Character>())
+            var characters = _characters.OfType<Character>().ToArray();
+            foreach (var character in characters)
             {
                 character.Step();
             }
