@@ -48,6 +48,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UiComplexTests.cs" />
+    <Compile Include="ViewingHelperTests.cs" />
     <Compile Include="ViewTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

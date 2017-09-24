@@ -42,8 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleViewer.cs" />
+    <Compile Include="IUiElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UiComplex.cs" />
     <Compile Include="View.cs" />
+    <Compile Include="ViewingHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Prophet.Core\Prophet.Core.csproj">
