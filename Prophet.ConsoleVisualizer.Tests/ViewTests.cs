@@ -16,8 +16,6 @@ namespace Prophet.ConsoleVisualizer.Tests
             
             #region Appearance
             
-            var filler = new ColoredCharacter(' ', ConsoleColor.Black);
-            
             var decoration = Mock.Of<Decoration>();
             decoration.Appearance = new ColoredCharacter('d', ConsoleColor.Blue);
 
@@ -45,12 +43,14 @@ namespace Prophet.ConsoleVisualizer.Tests
                 Position = new Vector2(2, 1), 
                 Size = new Vector2(1, 2),
                 Height = 0,
+                Scene = scene.Object,
+                Filler = new ColoredCharacter(' ', ConsoleColor.Black),
             };
             
             
             // act
             
-            var result = view.GetCurrentView(scene.Object, filler);
+            var result = view.GetCurrentView();
             
             
             // assert

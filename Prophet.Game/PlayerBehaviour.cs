@@ -26,5 +26,7 @@ namespace Prophet.Game
                 character.TryMove(character.Position + delta);
             }
         }
+
+        public object Clone() => new PlayerBehaviour();
     }
 }

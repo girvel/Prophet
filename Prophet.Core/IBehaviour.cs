@@ -1,6 +1,8 @@
-﻿namespace Prophet.Core
+﻿using System;
+
+namespace Prophet.Core
 {
-    public interface IBehaviour
+    public interface IBehaviour : ICloneable
     {
         void Step(Character character);
     }
