@@ -7,6 +7,7 @@ namespace Prophet.SceneEditor
     {
         public static void Main(string[] args)
         {
+            
         }
     }
 }

@@ -5,11 +5,11 @@ using Prophet.Core.Vector;
 
 namespace Prophet.ConsoleVisualizer
 {
-    public class UiComplex : IUiElement
+    public class UiComplex : IPositionedUiElement
     {
         public IUiElement Background { get; set; }
         
-        public Queue<IUiElement> DisplayingQueue { get; set; }
+        public Queue<IPositionedUiElement> DisplayingQueue { get; set; }
 
         public Vector2 Position { get; set; }
         

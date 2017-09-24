@@ -4,17 +4,21 @@ using Prophet.Core.Vector;
 
 namespace Prophet.ConsoleVisualizer
 {
-    public class View
+    public class View : IUiElement
     {
         public Vector2 Position { get; set; }
         
         public Vector2 Size { get; set; }
         
         public int Height { get; set; }
+        
+        public Scene Scene { get; set; }
+        
+        public ColoredCharacter Filler { get; set; }
 
 
 
-        public ColoredCharacter[,] GetCurrentView(Scene scene, ColoredCharacter filler)
+        public ColoredCharacter[,] GetCurrentView()
         {
             var result = new ColoredCharacter[Size.X, Size.Y];
             
@@ -24,16 +28,16 @@ namespace Prophet.ConsoleVisualizer
                 int ax = Position.X + x,
                     ay = Position.Y + y;
                 
-                if (x >= scene.Decorations.GetLength(0) || y >= scene.Decorations.GetLength(1))
+                if (x >= Scene.Decorations.GetLength(0) || y >= Scene.Decorations.GetLength(1))
                 {
-                    result[x, y] = filler;
+                    result[x, y] = Filler;
                 }
                 else
                 {
                     result[x, y] 
-                        = scene.GetCharacterAt(new Vector3(ax, ay, Height))?.Appearance 
-                          ?? scene.Decorations[ax, ay, Height]?.Appearance 
-                          ?? filler;
+                        = Scene.GetCharacterAt(new Vector3(ax, ay, Height))?.Appearance 
+                          ?? Scene.Decorations[ax, ay, Height]?.Appearance 
+                          ?? Filler;
                 }
             }
 

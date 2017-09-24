@@ -34,15 +34,26 @@ namespace Prophet.Game
 
             scene.AddCharacter(player);
 
-            var view = new View {Position = new Vector2(0, 0), Size = new Vector2(50, 10)};
+            var ui = new UiComplex
+            {
+                Background = new View
+                {
+                    Position = new Vector2(0, 0),
+                    Size = new Vector2(50, 10),
+                    Scene = scene,
+                    Filler = filler,
+                },
+                DisplayingQueue = new Queue<IPositionedUiElement>(),
+            };
+            
             var viewer = new ConsoleViewer();
-            viewer.Display(view.GetCurrentView(scene, filler));
+            viewer.Display(ui.GetCurrentView());
 
             while (true)
             {
                 scene.Step();
                 Console.Clear();
-                viewer.Display(view.GetCurrentView(scene, filler));
+                viewer.Display(ui.GetCurrentView());
             }
         }
     }
