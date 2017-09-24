@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using Prophet.ConsoleVisualizer;
-using Prophet.Core;
-using Prophet.Core.Vector;
 using Prophet.Game.Facade;
 
 namespace Prophet.Game

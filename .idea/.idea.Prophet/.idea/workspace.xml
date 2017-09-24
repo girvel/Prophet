@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c84790-220c-4230-97ed-a84d7072eee4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prophet.Game/Facade/MainScene.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prophet.Game/Facade/Player.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prophet.Game/Facade/Ui.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prophet.Game/bin/Debug/Prophet.Game.exe" afterPath="$PROJECT_DIR$/Prophet.Game/bin/Debug/Prophet.Game.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prophet.Game/bin/Debug/Prophet.Game.pdb" afterPath="$PROJECT_DIR$/Prophet.Game/bin/Debug/Prophet.Game.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prophet.Game/obj/Debug/CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/Prophet.Game/obj/Debug/CoreCompileInputs.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prophet.Game/obj/Debug/Prophet.Game.exe" afterPath="$PROJECT_DIR$/Prophet.Game/obj/Debug/Prophet.Game.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prophet.Game/obj/Debug/Prophet.Game.pdb" afterPath="$PROJECT_DIR$/Prophet.Game/obj/Debug/Prophet.Game.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Prophet/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Prophet/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prophet.Game/Facade/MainScene.cs" afterPath="$PROJECT_DIR$/Prophet.Game/Facade/MainScene.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prophet.Game/PlayerBehaviour.cs" afterPath="$PROJECT_DIR$/Prophet.Game/PlayerBehaviour.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prophet.Game/Program.cs" afterPath="$PROJECT_DIR$/Prophet.Game/Program.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prophet.Game/Prophet.Game.csproj" afterPath="$PROJECT_DIR$/Prophet.Game/Prophet.Game.csproj" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,17 +23,66 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Prophet.Game/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="198">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <marker date="1506263245783" expanded="true" signature="6:154" ph="..." />
-                <marker date="1506263245783" expanded="true" signature="178:581" ph="{...}" />
-                <marker date="1506263245783" expanded="true" signature="207:579" ph="{...}" />
-                <marker date="1506263245783" expanded="true" signature="260:573" ph="{...}" />
-                <marker date="1506263245783" expanded="true" signature="399:563" ph="{...}" />
+                <marker date="1506263328392" expanded="true" signature="6:73" ph="..." />
+                <marker date="1506263328392" expanded="true" signature="97:500" ph="{...}" />
+                <marker date="1506263328392" expanded="true" signature="126:498" ph="{...}" />
+                <marker date="1506263328392" expanded="true" signature="179:492" ph="{...}" />
+                <marker date="1506263328392" expanded="true" signature="318:482" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Prophet.Game/Facade/Player.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+              <folding>
+                <marker date="1506263139863" expanded="false" signature="6:33" ph="..." />
+                <marker date="1506263139863" expanded="true" signature="64:521" ph="{...}" />
+                <marker date="1506263139863" expanded="true" signature="97:519" ph="{...}" />
+                <marker date="1506263139863" expanded="true" signature="272:513" ph="{...}" />
+                <marker date="1506263139863" expanded="true" signature="328:502" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerBehaviour.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Prophet.Game/PlayerBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <marker date="1506263563732" expanded="false" signature="6:94" ph="..." />
+                <marker date="1506263563732" expanded="true" signature="118:860" ph="{...}" />
+                <marker date="1506263563732" expanded="true" signature="166:858" ph="{...}" />
+                <marker date="1506263563732" expanded="true" signature="304:551" ph="{...}" />
+                <marker date="1506263563732" expanded="true" signature="607:852" ph="{...}" />
+                <marker date="1506263563732" expanded="true" signature="751:842" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainScene.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Prophet.Game/Facade/MainScene.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="20" column="64" lean-forward="false" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+              <folding>
+                <marker date="1506263619623" expanded="false" signature="6:60" ph="..." />
+                <marker date="1506263619623" expanded="true" signature="91:856" ph="{...}" />
+                <marker date="1506263619623" expanded="true" signature="127:854" ph="{...}" />
+                <marker date="1506263619623" expanded="true" signature="290:848" ph="{...}" />
+                <marker date="1506263619623" expanded="true" signature="682:762" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -117,7 +162,6 @@
         <option value="$PROJECT_DIR$/Prophet.Core.Tests/SceneTests.cs" />
         <option value="$PROJECT_DIR$/Prophet.Core.Tests/CharacterTests.cs" />
         <option value="$PROJECT_DIR$/Prophet.Core/Character.cs" />
-        <option value="$PROJECT_DIR$/Prophet.Game/PlayerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Prophet.Core/Scene.cs" />
         <option value="$PROJECT_DIR$/Prophet.ConsoleVisualizer/ConsoleViewer.cs" />
         <option value="$PROJECT_DIR$/Prophet.ConsoleVisualizer/Ui.cs" />
@@ -134,8 +178,9 @@
         <option value="$PROJECT_DIR$/Prophet.Game/UiFacade.cs" />
         <option value="$PROJECT_DIR$/Prophet.Game/Facade/Player.cs" />
         <option value="$PROJECT_DIR$/Prophet.Game/Facade/Ui.cs" />
-        <option value="$PROJECT_DIR$/Prophet.Game/Facade/MainScene.cs" />
         <option value="$PROJECT_DIR$/Prophet.Game/Program.cs" />
+        <option value="$PROJECT_DIR$/Prophet.Game/PlayerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Prophet.Game/Facade/MainScene.cs" />
       </list>
     </option>
   </component>
@@ -391,7 +436,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506165937208</updated>
-      <workItem from="1506165950409" duration="28112000" />
+      <workItem from="1506165950409" duration="28521000" />
     </task>
     <task id="LOCAL-00001" summary="refactored access to characters on the scene">
       <created>1506191684584</created>
@@ -404,7 +449,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28112000" />
+    <option name="totallyTimeSpent" value="28521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -651,21 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Prophet.Game/PlayerBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <marker date="1506228812079" expanded="false" signature="6:94" ph="..." />
-            <marker date="1506228812079" expanded="true" signature="118:847" ph="{...}" />
-            <marker date="1506228812079" expanded="true" signature="166:845" ph="{...}" />
-            <marker date="1506228812079" expanded="true" signature="295:538" ph="{...}" />
-            <marker date="1506228812079" expanded="true" signature="594:839" ph="{...}" />
-            <marker date="1506228812079" expanded="true" signature="738:829" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Prophet.Core/Scene.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -863,49 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Prophet.Game/Facade/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <marker date="1506263139863" expanded="true" signature="6:33" ph="..." />
-            <marker date="1506263139863" expanded="true" signature="64:521" ph="{...}" />
-            <marker date="1506263139863" expanded="true" signature="97:519" ph="{...}" />
-            <marker date="1506263139863" expanded="true" signature="272:513" ph="{...}" />
-            <marker date="1506263139863" expanded="true" signature="328:502" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prophet.Game/Facade/MainScene.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <marker date="1506263216319" expanded="true" signature="6:60" ph="..." />
-            <marker date="1506263216319" expanded="true" signature="91:1124" ph="{...}" />
-            <marker date="1506263216319" expanded="true" signature="127:1122" ph="{...}" />
-            <marker date="1506263216319" expanded="true" signature="290:1116" ph="{...}" />
-            <marker date="1506263216319" expanded="true" signature="582:1029" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prophet.Game/Facade/Ui.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1506263191280" expanded="true" signature="6:127" ph="..." />
-            <marker date="1506263191280" expanded="true" signature="158:820" ph="{...}" />
-            <marker date="1506263191280" expanded="true" signature="187:818" ph="{...}" />
-            <marker date="1506263191280" expanded="true" signature="365:812" ph="{...}" />
-            <marker date="1506263191280" expanded="true" signature="421:801" ph="{...}" />
-            <marker date="1506263191280" expanded="true" signature="477:717" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Prophet.ConsoleVisualizer/ViewingHelper.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -922,16 +909,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Prophet.Game/Program.cs">
+    <entry file="file://$PROJECT_DIR$/Prophet.Game/Facade/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <marker date="1506263139863" expanded="false" signature="6:33" ph="..." />
+            <marker date="1506263139863" expanded="true" signature="64:521" ph="{...}" />
+            <marker date="1506263139863" expanded="true" signature="97:519" ph="{...}" />
+            <marker date="1506263139863" expanded="true" signature="272:513" ph="{...}" />
+            <marker date="1506263139863" expanded="true" signature="328:502" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prophet.Game/PlayerBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <marker date="1506263245783" expanded="true" signature="6:154" ph="..." />
-            <marker date="1506263245783" expanded="true" signature="178:581" ph="{...}" />
-            <marker date="1506263245783" expanded="true" signature="207:579" ph="{...}" />
-            <marker date="1506263245783" expanded="true" signature="260:573" ph="{...}" />
-            <marker date="1506263245783" expanded="true" signature="399:563" ph="{...}" />
+            <marker date="1506263563732" expanded="false" signature="6:94" ph="..." />
+            <marker date="1506263563732" expanded="true" signature="118:860" ph="{...}" />
+            <marker date="1506263563732" expanded="true" signature="166:858" ph="{...}" />
+            <marker date="1506263563732" expanded="true" signature="304:551" ph="{...}" />
+            <marker date="1506263563732" expanded="true" signature="607:852" ph="{...}" />
+            <marker date="1506263563732" expanded="true" signature="751:842" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prophet.Game/Facade/Ui.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <marker date="1506263191280" expanded="false" signature="6:127" ph="..." />
+            <marker date="1506263191280" expanded="true" signature="158:820" ph="{...}" />
+            <marker date="1506263191280" expanded="true" signature="187:818" ph="{...}" />
+            <marker date="1506263191280" expanded="true" signature="365:812" ph="{...}" />
+            <marker date="1506263191280" expanded="true" signature="421:801" ph="{...}" />
+            <marker date="1506263191280" expanded="true" signature="477:717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prophet.Game/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1506263328392" expanded="true" signature="6:73" ph="..." />
+            <marker date="1506263328392" expanded="true" signature="97:500" ph="{...}" />
+            <marker date="1506263328392" expanded="true" signature="126:498" ph="{...}" />
+            <marker date="1506263328392" expanded="true" signature="179:492" ph="{...}" />
+            <marker date="1506263328392" expanded="true" signature="318:482" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prophet.Game/Facade/MainScene.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="20" column="64" lean-forward="false" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+          <folding>
+            <marker date="1506263619623" expanded="false" signature="6:60" ph="..." />
+            <marker date="1506263619623" expanded="true" signature="91:856" ph="{...}" />
+            <marker date="1506263619623" expanded="true" signature="127:854" ph="{...}" />
+            <marker date="1506263619623" expanded="true" signature="290:848" ph="{...}" />
+            <marker date="1506263619623" expanded="true" signature="682:762" ph="{...}" />
           </folding>
         </state>
       </provider>
