@@ -1,5 +1,6 @@
 ﻿using System;
 using Prophet.Core;
+using Prophet.Core.Vector;
 
 namespace Prophet.ConsoleVisualizer
 {

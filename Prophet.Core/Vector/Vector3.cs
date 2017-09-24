@@ -1,4 +1,4 @@
-﻿namespace Prophet.Core
+﻿namespace Prophet.Core.Vector
 {
     public struct Vector3
     {

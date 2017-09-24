@@ -1,6 +1,7 @@
 ﻿using System;
 using Moq;
 using NUnit.Framework;
+using Prophet.Core.Vector;
 
 namespace Prophet.Core.Tests
 {
@@ -128,6 +129,37 @@ namespace Prophet.Core.Tests
             // assert
             Assert.IsTrue(result);
             Assert.AreEqual(character, scene.GetCharacterAt(new Vector3(1, 2, 3)));
+        }
+
+        [Test]
+        public void Step_CallsCharactersStep()
+        {
+            // arrange
+            var scene = new Scene();
+            scene.InitializeLandscape(new Vector3(3, 1, 1));
+            
+            var characters = new[]
+            {
+                new Mock<Character>(),
+                new Mock<Character>(),
+                new Mock<Character>(),
+            };
+
+            var i = 0;
+            foreach (var character in characters)
+            {
+                character.SetupGet(c => c.Position).Returns(new Vector3(i++, 0, 0));
+                scene.AddCharacter(character.Object);
+            }
+            
+            // act
+            scene.Step();
+            
+            // assert
+            foreach (var character in characters)
+            {
+                character.Verify(c => c.Step(), Times.Once);
+            }
         }
     }
 }

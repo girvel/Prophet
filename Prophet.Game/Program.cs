@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Prophet.ConsoleVisualizer;
 using Prophet.Core;
+using Prophet.Core.Vector;
 
 namespace Prophet.Game
 {

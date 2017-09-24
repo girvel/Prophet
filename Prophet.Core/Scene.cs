@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using Prophet.Core.Vector;
 
 namespace Prophet.Core
 {
@@ -9,7 +11,8 @@ namespace Prophet.Core
         private Character[,,] _characters;
 
 
-
+        #region Landscape
+        
         public virtual void InitializeLandscape(Vector3 size)
         {
             Decorations = new Decoration[size.X, size.Y, size.Z];
@@ -23,7 +26,10 @@ namespace Prophet.Core
                    && GetCharacterAt(position) == null;
         }
         
+        #endregion
         
+        
+        #region Characters
         
         public virtual void AddCharacter(Character character)
         {
@@ -58,5 +64,20 @@ namespace Prophet.Core
 
             return true;
         }
+        
+        #endregion
+        
+        
+        #region Behaviour
+
+        public virtual void Step()
+        {
+            foreach (var character in _characters.OfType<Character>())
+            {
+                character.Step();
+            }
+        }
+        
+        #endregion
     }
 }

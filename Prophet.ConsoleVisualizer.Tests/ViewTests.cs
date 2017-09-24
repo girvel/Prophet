@@ -2,6 +2,7 @@
 using Moq;
 using NUnit.Framework;
 using Prophet.Core;
+using Prophet.Core.Vector;
 
 namespace Prophet.ConsoleVisualizer.Tests
 {
