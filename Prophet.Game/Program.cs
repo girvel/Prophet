@@ -14,7 +14,6 @@ namespace Prophet.Game
             while (true)
             {
                 MainScene.Current.Step();
-                Console.Clear();
                 viewer.Display(Ui.Current.GetCurrentView());
             }
         }
