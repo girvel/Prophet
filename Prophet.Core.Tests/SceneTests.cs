@@ -53,5 +53,81 @@ namespace Prophet.Core.Tests
             // assert
             Assert.Throws<ArgumentException>(() => scene.AddCharacter(character2));
         }
+
+        [Test]
+        public void IsPlaceFree_ReturnsTrueIfPlaceIsFree()
+        {
+            // arrange
+            var scene = new Scene();
+            scene.InitializeLandscape(new Vector3(1, 1, 1));
+            
+            // act
+            var result = scene.IsPlaceFree(new Vector3());
+            
+            // assert
+            Assert.IsTrue(result);
+        }
+
+        [Test]
+        public void IsPlaceFree_ReturnsFalseIfThereIsCharacter()
+        {
+            // arrange
+            var scene = new Scene();
+            scene.InitializeLandscape(new Vector3(1, 1, 1));
+            scene.AddCharacter(new Character());
+            
+            // act
+            var result = scene.IsPlaceFree(new Vector3());
+            
+            // assert
+            Assert.IsFalse(result);
+        }
+
+        [Test]
+        public void IsPlaceFree_ReturnsFalseIfPlaceIsOutsideSceneBorder()
+        {
+            // arrange
+            var scene = new Scene();
+            scene.InitializeLandscape(new Vector3(1, 1, 1));
+            
+            // act
+            var result = scene.IsPlaceFree(new Vector3(1, 0, 0));
+            
+            // assert
+            Assert.IsFalse(result);
+        }
+        
+        [Test]
+        public void TryMoveCharacter_ReturnsFalseWhenThereIsNoPlace()
+        {
+            // arrange
+            var character = new Character();
+            var scene = new Scene();
+            scene.InitializeLandscape(new Vector3(1, 1, 1));
+            scene.AddCharacter(character);
+            
+            // act
+            var result = scene.TryMoveCharacter(character, new Vector3(1, 2, 3));
+            
+            // assert
+            Assert.IsFalse(result);
+        }
+
+        [Test]
+        public void TryMoveCharacter_ReturnsTrueAndMovesCharacterWhenItIsPossible()
+        {
+            // arrange
+            var character = new Character();
+            var scene = new Scene();
+            scene.InitializeLandscape(new Vector3(4, 4, 4));
+            scene.AddCharacter(character);
+            
+            // act
+            var result = scene.TryMoveCharacter(character, new Vector3(1, 2, 3));
+            
+            // assert
+            Assert.IsTrue(result);
+            Assert.AreEqual(character, scene.GetCharacterAt(new Vector3(1, 2, 3)));
+        }
     }
 }

@@ -2,8 +2,8 @@
 {
     public class Character : GameObject
     {
-        public Vector3 Position { get; }
+        public Vector3 Position { get; private set; }
         
-        public Scene Scene { get; internal set; }
+        public Scene Scene { get; set; }
     }
 }

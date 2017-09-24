@@ -15,6 +15,13 @@ namespace Prophet.Core
             Decorations = new Decoration[size.X, size.Y, size.Z];
             _characters = new Character [size.X, size.Y, size.Z];
         }
+
+        public virtual bool IsPlaceFree(Vector3 position)
+        {
+            return position.X < _characters.GetLength(0)
+                   && position.Y < _characters.GetLength(1)
+                   && GetCharacterAt(position) == null;
+        }
         
         
         
@@ -29,13 +36,27 @@ namespace Prophet.Core
                         : "There is already another one character at character's position");
             }
             
-            setCharacterAt(character.Position, character);
+            SetCharacterAt(character.Position, character);
             character.Scene = this;
         }
 
-        public virtual Character GetCharacterAt(Vector3 position) => _characters[position.X, position.Y, position.Z];
+        public virtual Character GetCharacterAt(Vector3 position) 
+            => _characters[position.X, position.Y, position.Z];
 
-        private void setCharacterAt(Vector3 position, Character value) =>
-            _characters[position.X, position.Y, position.Z] = value;
+        private void SetCharacterAt(Vector3 position, Character value) 
+            => _characters[position.X, position.Y, position.Z] = value;
+
+        public virtual bool TryMoveCharacter(Character character, Vector3 to)
+        {
+            if (!IsPlaceFree(to))
+            {
+                return false;
+            }
+            
+            SetCharacterAt(character.Position, null);
+            SetCharacterAt(to, character);
+
+            return true;
+        }
     }
 }
