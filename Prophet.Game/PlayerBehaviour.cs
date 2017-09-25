@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Prophet.Core;
 using Prophet.Core.Vector;
+using Prophet.Game.Facade;
 
 namespace Prophet.Game
 {
@@ -19,13 +20,19 @@ namespace Prophet.Game
         public void Step(Character character)
         {
             var key = Console.ReadKey(true);
-
+            
+            Ui.Current.Panel.SetEnemy(null);
+            
             Vector3 delta;
             if (_movingKeys.TryGetValue(key.Key, out delta))
             {
                 if (!character.TryMove(character.Position + delta))
                 {
-                    character.TryAttack(character.Scene.GetCharacterAt(character.Position + delta));
+                    var enemy = character.Scene.GetCharacterAt(character.Position + delta);
+                    if (character.TryAttack(enemy))
+                    {
+                        Ui.Current.Panel.SetEnemy(enemy);
+                    }
                 }
             }
         }

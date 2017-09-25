@@ -34,6 +34,7 @@ namespace Prophet.Game.Facade
                 Damage = 10, 
                 Health = 25, 
                 Position = new Vector3(2, 2, 0),
+                Name = "Зомби",
             });
 
             return scene;
