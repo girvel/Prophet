@@ -39,9 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ai\EnemyAi.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="ColoredCharacter.cs" />
     <Compile Include="Decoration.cs" />
+    <Compile Include="Extensions\SceneHelper.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="IBehaviour.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

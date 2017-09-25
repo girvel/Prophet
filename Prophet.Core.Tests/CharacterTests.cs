@@ -88,30 +88,11 @@ namespace Prophet.Core.Tests
         public void TryAttack_ReturnsFalseIfDistanceIsTooBig()
         {
             // arrange
-            var enemy = new Character();
-            var character = new Character
-            {
-                Scene = Mock.Of<Scene>(s => s.GetCharacterAt(It.IsAny<Vector3>()) == enemy),
-            };
+            var enemy = new Character{Position = new Vector3(2, 2, 0)};
+            var character = new Character();
             
             // act
-            var result = character.TryAttack(new Vector3(2, 1, 1));
-            
-            // assert
-            Assert.IsFalse(result);
-        }
-
-        [Test]
-        public void TryAttack_ReturnsFalseIfThereIsNoEnemy()
-        {
-            // arrange
-            var character = new Character
-            {
-                Scene = Mock.Of<Scene>(s => s.GetCharacterAt(It.IsAny<Vector3>()) == null),
-            };
-            
-            // act
-            var result = character.TryAttack(new Vector3(1, 1, 1));
+            var result = character.TryAttack(enemy);
             
             // assert
             Assert.IsFalse(result);
@@ -121,15 +102,14 @@ namespace Prophet.Core.Tests
         public void TryAttack_ReturnsTrueAndDecreasesTargetsHealth()
         {
             // arrange
-            var enemy = new Character {Health = 100};
+            var enemy = new Character {Health = 100, Position = new Vector3(1, 1, 1),};
             var character = new Character
             {
-                Scene = Mock.Of<Scene>(s => s.GetCharacterAt(It.IsAny<Vector3>()) == enemy),
                 Damage = 10,
             };
             
             // act
-            var result = character.TryAttack(new Vector3(1, 1, 1));
+            var result = character.TryAttack(enemy);
             
             // assert
             Assert.IsTrue(result);
@@ -140,15 +120,14 @@ namespace Prophet.Core.Tests
         public void TryAttack_ReplacesAppearanceOfTheKilledCharacter()
         {
             // arrange
-            var enemy = new Character {Health = 100};
+            var enemy = new Character {Health = 100, Position = new Vector3(1, 1, 1),};
             var character = new Character
             {
-                Scene = Mock.Of<Scene>(s => s.GetCharacterAt(It.IsAny<Vector3>()) == enemy),
                 Damage = 100,
             };
             
             // act
-            var result = character.TryAttack(new Vector3(1, 1, 1));
+            var result = character.TryAttack(enemy);
             
             // assert
             Assert.IsTrue(result);

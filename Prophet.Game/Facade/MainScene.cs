@@ -1,5 +1,6 @@
 ﻿using System;
 using Prophet.Core;
+using Prophet.Core.Ai;
 using Prophet.Core.Vector;
 
 namespace Prophet.Game.Facade
@@ -25,6 +26,15 @@ namespace Prophet.Game.Facade
             }
 
             scene.AddCharacter(Player.Current);
+            scene.AddCharacter(new Character
+            {
+                Appearance = new ColoredCharacter('e', ConsoleColor.Red), 
+                DeadBodyAppearance = new ColoredCharacter('$', ConsoleColor.DarkYellow),
+                Behaviour = new EnemyAi(), 
+                Damage = 10, 
+                Health = 25, 
+                Position = new Vector3(2, 2, 0),
+            });
 
             return scene;
         }

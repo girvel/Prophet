@@ -17,6 +17,8 @@ namespace Prophet.Game.Facade
                 Appearance = new ColoredCharacter('@', ConsoleColor.White),
                 Name = "Игрок",
                 Behaviour = new PlayerBehaviour(),
+                Health = 100,
+                Damage = 10,
             };
         }
     }

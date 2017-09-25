@@ -50,15 +50,13 @@ namespace Prophet.Core
             return false;
         }
 
-        public virtual bool TryAttack(Vector3 to)
+        public virtual bool TryAttack(Character enemy)
         {
-            var delta = to - Position;
+            var distance = enemy.Position - Position;
 
-            var enemy = Scene.GetCharacterAt(to);
-            if (Math.Abs(delta.X) > 1
-                || Math.Abs(delta.Y) > 1
-                || Math.Abs(delta.Z) > 1
-                || enemy == null)
+            if (Math.Abs(distance.X) > 1
+                || Math.Abs(distance.Y) > 1
+                || Math.Abs(distance.Z) > 1)
             {
                 return false;
             }
