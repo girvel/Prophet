@@ -8,6 +8,11 @@ namespace Prophet.Core.Ai
 
         public void Step(Character character)
         {
+            if (!character.IsAlive)
+            {
+                return;
+            }
+            
             var enemy = character.Scene.FindNearestCharacter(character.Position, 1, c => true);
             if (enemy != null)
             {

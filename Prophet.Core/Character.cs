@@ -52,6 +52,8 @@ namespace Prophet.Core
 
         public virtual bool TryAttack(Character enemy)
         {
+            if (enemy == null) return false;
+            
             var distance = enemy.Position - Position;
 
             if (Math.Abs(distance.X) > 1

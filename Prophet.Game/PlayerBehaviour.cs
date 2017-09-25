@@ -23,7 +23,10 @@ namespace Prophet.Game
             Vector3 delta;
             if (_movingKeys.TryGetValue(key.Key, out delta))
             {
-                character.TryMove(character.Position + delta);
+                if (!character.TryMove(character.Position + delta))
+                {
+                    character.TryAttack(character.Scene.GetCharacterAt(character.Position + delta));
+                }
             }
         }
 

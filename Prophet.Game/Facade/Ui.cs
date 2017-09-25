@@ -29,16 +29,15 @@ namespace Prophet.Game.Facade
                     Scene = MainScene.Current,
                     Filler = new ColoredCharacter(' ', ConsoleColor.Black),
                 },
-                DisplayingQueue = new Queue<IPositionedUiElement>(
-                    new IPositionedUiElement[]
+                DisplayingQueue = new List<IPositionedUiElement>
+                {
+                    new CharacteristicsPanel
                     {
-                        new CharacteristicsPanel
-                        {
-                            Position = new Vector2(WindowSizeX - PanelSizeX, 0), 
-                            Size = new Vector2(PanelSizeX, WindowSizeY), 
-                            Subject = Player.Current,
-                        },
-                    }),
+                        Position = new Vector2(WindowSizeX - PanelSizeX, 0),
+                        Size = new Vector2(PanelSizeX, WindowSizeY),
+                        Subject = Player.Current,
+                    },
+                },
             };
         }
     }

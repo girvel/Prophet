@@ -50,8 +50,13 @@ namespace Prophet.Core
             character.Scene = this;
         }
 
-        public virtual Character GetCharacterAt(Vector3 position) 
-            => _characters[position.X, position.Y, position.Z];
+        public virtual Character GetCharacterAt(Vector3 position)
+            => position.X < 0 || position.Y < 0 || position.Z < 0
+               || position.X >= _characters.GetLength(0)
+               || position.Y >= _characters.GetLength(1)
+               || position.Z >= _characters.GetLength(2)
+                ? null
+                : _characters[position.X, position.Y, position.Z];
 
         private void SetCharacterAt(Vector3 position, Character value) 
             => _characters[position.X, position.Y, position.Z] = value;

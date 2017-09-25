@@ -9,7 +9,7 @@ namespace Prophet.ConsoleVisualizer
     {
         public IUiElement Background { get; set; }
         
-        public Queue<IPositionedUiElement> DisplayingQueue { get; set; }
+        public List<IPositionedUiElement> DisplayingQueue { get; set; }
 
         public Vector2 Position { get; set; }
         
