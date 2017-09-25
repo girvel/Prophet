@@ -1,6 +1,6 @@
 ﻿using Prophet.Core;
 
-namespace Prophet.ConsoleVisualizer
+namespace Prophet.ConsoleVisualizer.Interface
 {
     public interface IUiElement
     {

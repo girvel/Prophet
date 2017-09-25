@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Prophet.ConsoleVisualizer;
+using Prophet.ConsoleVisualizer.Interface;
 using Prophet.Core;
 using Prophet.Core.Vector;
+using Prophet.Game.Interface;
 
 namespace Prophet.Game.Facade
 {
@@ -31,11 +33,9 @@ namespace Prophet.Game.Facade
                 },
                 DisplayingQueue = new List<IPositionedUiElement>
                 {
-                    new CharacteristicsPanel
+                    new CharacteristicsPanel(Player.Current, new Vector2(PanelSizeX, WindowSizeY))
                     {
                         Position = new Vector2(WindowSizeX - PanelSizeX, 0),
-                        Size = new Vector2(PanelSizeX, WindowSizeY),
-                        Subject = Player.Current,
                     },
                 },
             };

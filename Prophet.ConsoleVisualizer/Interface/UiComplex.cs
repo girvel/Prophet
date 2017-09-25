@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Prophet.Core;
 using Prophet.Core.Vector;
 
-namespace Prophet.ConsoleVisualizer
+namespace Prophet.ConsoleVisualizer.Interface
 {
     public class UiComplex : IPositionedUiElement
     {
-        public IUiElement Background { get; set; }
+        public virtual IUiElement Background { get; set; }
         
-        public List<IPositionedUiElement> DisplayingQueue { get; set; }
+        public virtual List<IPositionedUiElement> DisplayingQueue { get; set; }
 
         public Vector2 Position { get; set; }
         

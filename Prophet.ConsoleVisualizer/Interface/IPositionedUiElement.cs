@@ -1,7 +1,6 @@
-﻿using Prophet.Core;
-using Prophet.Core.Vector;
+﻿using Prophet.Core.Vector;
 
-namespace Prophet.ConsoleVisualizer
+namespace Prophet.ConsoleVisualizer.Interface
 {
     public interface IPositionedUiElement : IUiElement
     {

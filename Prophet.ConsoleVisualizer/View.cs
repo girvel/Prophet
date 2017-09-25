@@ -1,4 +1,5 @@
 ﻿using System;
+using Prophet.ConsoleVisualizer.Interface;
 using Prophet.Core;
 using Prophet.Core.Vector;
 
