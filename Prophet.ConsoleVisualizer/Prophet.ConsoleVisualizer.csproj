@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayHelper.cs" />
     <Compile Include="ConsoleViewer.cs" />
     <Compile Include="IPositionedUiElement.cs" />
     <Compile Include="IUiElement.cs" />

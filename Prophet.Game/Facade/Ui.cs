@@ -13,6 +13,11 @@ namespace Prophet.Game.Facade
 
 
 
+        private const int 
+            WindowSizeX = 70, 
+            WindowSizeY = 20,
+            PanelSizeX = 20;
+        
         private static IUiElement Generate()
         {
             return new UiComplex
@@ -20,11 +25,20 @@ namespace Prophet.Game.Facade
                 Background = new View
                 {
                     Position = new Vector2(0, 0),
-                    Size = new Vector2(50, 10),
+                    Size = new Vector2(WindowSizeX, WindowSizeY),
                     Scene = MainScene.Current,
                     Filler = new ColoredCharacter(' ', ConsoleColor.Black),
                 },
-                DisplayingQueue = new Queue<IPositionedUiElement>(),
+                DisplayingQueue = new Queue<IPositionedUiElement>(
+                    new IPositionedUiElement[]
+                    {
+                        new CharacteristicsPanel
+                        {
+                            Position = new Vector2(WindowSizeX - PanelSizeX, 0), 
+                            Size = new Vector2(PanelSizeX, WindowSizeY), 
+                            Subject = Player.Current,
+                        },
+                    }),
             };
         }
     }

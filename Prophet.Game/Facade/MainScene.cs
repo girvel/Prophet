@@ -16,7 +16,7 @@ namespace Prophet.Game.Facade
             var floor = new Decoration {Appearance = new ColoredCharacter('_', ConsoleColor.DarkGray), Name = "Пол"};
             
             var scene = new Scene();
-            scene.InitializeLandscape(new Vector3(50, 10, 1));
+            scene.InitializeLandscape(new Vector3(128, 128, 1));
             
             for (var x = 0; x < scene.Decorations.GetLength(0); x++)
             for (var y = 0; y < scene.Decorations.GetLength(1); y++)
