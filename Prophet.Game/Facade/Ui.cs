@@ -10,8 +10,8 @@ namespace Prophet.Game.Facade
 {
     public static class Ui
     {
-        private static IUiElement _current;
-        public static IUiElement Current = _current ?? (_current = Generate());
+        private static GameUi _current;
+        public static GameUi Current = _current ?? (_current = Generate());
 
 
 
@@ -20,25 +20,20 @@ namespace Prophet.Game.Facade
             WindowSizeY = 20,
             PanelSizeX = 20;
         
-        private static IUiElement Generate()
+        private static GameUi Generate()
         {
-            return new UiComplex
-            {
-                Background = new View
+            return new GameUi(
+                new View
                 {
                     Position = new Vector2(0, 0),
                     Size = new Vector2(WindowSizeX, WindowSizeY),
                     Scene = MainScene.Current,
                     Filler = new ColoredCharacter(' ', ConsoleColor.Black),
                 },
-                DisplayingQueue = new List<IPositionedUiElement>
+                new InformationPanel(Player.Current, new Vector2(PanelSizeX, WindowSizeY))
                 {
-                    new CharacteristicsPanel(Player.Current, new Vector2(PanelSizeX, WindowSizeY))
-                    {
-                        Position = new Vector2(WindowSizeX - PanelSizeX, 0),
-                    },
-                },
-            };
+                    Position = new Vector2(WindowSizeX - PanelSizeX, 0),
+                });
         }
     }
 }

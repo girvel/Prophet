@@ -8,7 +8,7 @@ using Prophet.Core.Vector;
 
 namespace Prophet.Game.Interface
 {
-    public class CharacteristicsPanel : IPositionedUiElement
+    public class InformationPanel : IPositionedUiElement
     {
         private readonly UiComplex _complex;
         
@@ -19,7 +19,7 @@ namespace Prophet.Game.Interface
         public Vector2 Size { get; set; }
 
 
-        public CharacteristicsPanel(Character subject, Vector2 size)
+        public InformationPanel(Character subject, Vector2 size)
         {
             Size = size;
             _complex = new UiComplex

@@ -44,7 +44,8 @@
     <Compile Include="Facade\MainScene.cs" />
     <Compile Include="Facade\Player.cs" />
     <Compile Include="Facade\Ui.cs" />
-    <Compile Include="Interface\CharacteristicsPanel.cs" />
+    <Compile Include="Interface\GameUi.cs" />
+    <Compile Include="Interface\InformationPanel.cs" />
     <Compile Include="Interface\CharacteristicsIndicator.cs" />
     <Compile Include="PlayerBehaviour.cs" />
     <Compile Include="Program.cs" />
