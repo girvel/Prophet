@@ -14,7 +14,6 @@ namespace Prophet.Game.Facade
         public static GameUi Current = _current ?? (_current = Generate());
 
 
-
         private const int 
             WindowSizeX = 70, 
             WindowSizeY = 20,

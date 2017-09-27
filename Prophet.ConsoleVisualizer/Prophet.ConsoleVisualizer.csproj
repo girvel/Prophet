@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ArrayHelper.cs" />
     <Compile Include="ConsoleViewer.cs" />
+    <Compile Include="Interface\Indicator.cs" />
     <Compile Include="Interface\IPositionedUiElement.cs" />
     <Compile Include="Interface\IUiElement.cs" />
     <Compile Include="Interface\PanelBackground.cs" />

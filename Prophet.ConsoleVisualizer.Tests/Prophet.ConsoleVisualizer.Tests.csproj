@@ -48,6 +48,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\IndicatorTests.cs" />
     <Compile Include="UiComplexTests.cs" />
     <Compile Include="ViewingHelperTests.cs" />
     <Compile Include="ViewTests.cs" />

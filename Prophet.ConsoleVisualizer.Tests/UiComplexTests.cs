@@ -45,12 +45,11 @@ namespace Prophet.ConsoleVisualizer.Tests
             var complex = new UiComplex
             {
                 Background = Mock.Of<IPositionedUiElement>(e => e.GetCurrentView() == views[0] && e.Position == new Vector2(0, 0)),
-                DisplayingQueue = new Queue<IPositionedUiElement>(
-                    new[]
-                    {
-                        Mock.Of<IPositionedUiElement>(e => e.GetCurrentView() == views[1] && e.Position == new Vector2(0, 1)),
-                        Mock.Of<IPositionedUiElement>(e => e.GetCurrentView() == views[2] && e.Position == new Vector2(0, 2)),
-                    }),
+                DisplayingQueue = new List<IPositionedUiElement>
+                {
+                    Mock.Of<IPositionedUiElement>(e => e.GetCurrentView() == views[1] && e.Position == new Vector2(0, 1)),
+                    Mock.Of<IPositionedUiElement>(e => e.GetCurrentView() == views[2] && e.Position == new Vector2(0, 2)),
+                },
             };
             
             // act
