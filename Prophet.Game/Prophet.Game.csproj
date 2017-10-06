@@ -48,6 +48,7 @@
     <Compile Include="Interface\GameUi.cs" />
     <Compile Include="Interface\InformationPanel.cs" />
     <Compile Include="Interface\CharacteristicsIndicator.cs" />
+    <Compile Include="Interface\InventoryIndicator.cs" />
     <Compile Include="PlayerBehaviour.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

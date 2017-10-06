@@ -99,6 +99,20 @@ namespace Prophet.Core.Tests
         }
 
         [Test]
+        public void TryAttack_ReturnsFalseIfEnemyIsDead()
+        {
+            // arrange
+            var enemy = new Character{Health = 0, Position = new Vector3(1, 1, 0)};
+            var character = new Character();
+            
+            // act
+            var result = character.TryAttack(enemy);
+            
+            // assert
+            Assert.IsFalse(result);
+        }
+
+        [Test]
         public void TryAttack_ReturnsTrueAndDecreasesTargetsHealth()
         {
             // arrange
@@ -117,13 +131,13 @@ namespace Prophet.Core.Tests
         }
 
         [Test]
-        public void TryAttack_ReplacesAppearanceOfTheKilledCharacter()
+        public void TryAttack_ReplacesAppearanceOfTheKilledCharacterAndSetsZeroHealth()
         {
             // arrange
             var enemy = new Character {Health = 100, Position = new Vector3(1, 1, 1),};
             var character = new Character
             {
-                Damage = 100,
+                Damage = 110,
             };
             
             // act
@@ -133,6 +147,7 @@ namespace Prophet.Core.Tests
             Assert.IsTrue(result);
             Assert.IsFalse(enemy.IsAlive);
             Assert.AreEqual(enemy.DeadBodyAppearance, enemy.Appearance);
+            Assert.AreEqual(0, enemy.Health);
         }
     }
 }

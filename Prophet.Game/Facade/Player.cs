@@ -1,5 +1,6 @@
 ﻿using System;
 using Prophet.Core;
+using Prophet.Core.Items;
 
 namespace Prophet.Game.Facade
 {
@@ -19,6 +20,15 @@ namespace Prophet.Game.Facade
                 Behaviour = new PlayerBehaviour(),
                 Health = 100,
                 Damage = 10,
+                Inventory = new Inventory
+                {
+                    PassiveItems =
+                    {
+                        new Item{Name = "Железный меч"}, 
+                        new Item{Name = "Яд"}, 
+                        new Item{Name = "Жареное мясо"},
+                    },
+                },
             };
         }
     }

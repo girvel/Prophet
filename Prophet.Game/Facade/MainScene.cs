@@ -1,6 +1,7 @@
 ﻿using System;
 using Prophet.Core;
 using Prophet.Core.Ai;
+using Prophet.Core.Items;
 using Prophet.Core.Vector;
 
 namespace Prophet.Game.Facade
@@ -35,6 +36,7 @@ namespace Prophet.Game.Facade
                 Health = 25, 
                 Position = new Vector3(2, 2, 0),
                 Name = "Зомби",
+                Inventory = new Inventory {PassiveItems = {new Item{Name = "Ключ от дома Ария"}}},
             });
 
             return scene;

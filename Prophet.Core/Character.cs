@@ -1,4 +1,5 @@
 ﻿using System;
+using Prophet.Core.Items;
 using Prophet.Core.Vector;
 
 namespace Prophet.Core
@@ -19,6 +20,9 @@ namespace Prophet.Core
         public int Health { get; set; }
 
         public bool IsAlive => Health > 0;
+        
+        
+        public Inventory Inventory { get; set; }
 
 
         public static Character CreateByPrototype(Character prototype)
@@ -52,7 +56,7 @@ namespace Prophet.Core
 
         public virtual bool TryAttack(Character enemy)
         {
-            if (enemy == null) return false;
+            if (enemy == null || !enemy.IsAlive) return false;
             
             var distance = enemy.Position - Position;
 
@@ -68,6 +72,7 @@ namespace Prophet.Core
             if (!enemy.IsAlive)
             {
                 enemy.Appearance = enemy.DeadBodyAppearance;
+                enemy.Health = 0;
             }
             
             return true;

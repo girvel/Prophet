@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Prophet.Core;
+using Prophet.Core.Extensions;
 using Prophet.Core.Vector;
 using Prophet.Game.Facade;
 
@@ -17,14 +18,29 @@ namespace Prophet.Game
                 [ConsoleKey.D] = new Vector3( 1,  0,  0),
             };
         
+        private readonly Dictionary<ConsoleKey, Action<Character>> _otherActions
+            = new Dictionary<ConsoleKey, Action<Character>>
+            {
+                [ConsoleKey.E] = player =>
+                {
+                    Ui.Current.Panel.SetInventorySubject(
+                        player.Scene.FindNearestCharacter(
+                            player.Position, 
+                            1, 
+                            c => true));
+                },
+            };
+        
+        
+        
         public void Step(Character character)
         {
             var key = Console.ReadKey(true);
             
+            Ui.Current.Panel.SetInventorySubject(character);
             Ui.Current.Panel.SetEnemy(null);
             
-            Vector3 delta;
-            if (_movingKeys.TryGetValue(key.Key, out delta))
+            if (_movingKeys.TryGetValue(key.Key, out Vector3 delta))
             {
                 if (!character.TryMove(character.Position + delta))
                 {
@@ -34,6 +50,10 @@ namespace Prophet.Game
                         Ui.Current.Panel.SetEnemy(enemy);
                     }
                 }
+            }
+            else if (_otherActions.TryGetValue(key.Key, out Action<Character> action))
+            {
+                action(character);
             }
         }
 

@@ -14,8 +14,8 @@ namespace Prophet.Game.Interface
         {
             return new[]
             {
-                $"Health: {Subject.Health}",
-                $"Damage: {Subject.Damage}",
+                $"Здоровье: {Subject.Health}",
+                $"Урон: {Subject.Damage}",
             };
         }
 

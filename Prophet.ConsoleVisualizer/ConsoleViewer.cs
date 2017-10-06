@@ -16,7 +16,7 @@ namespace Prophet.ConsoleVisualizer
                 || _lastView.GetLength(1) != view.GetLength(1))
             {
                 Console.Clear();
-                Console.SetWindowSize(view.GetLength(0), view.GetLength(1) + 1);
+                Console.SetWindowSize(view.GetLength(0) + 1, view.GetLength(1) + 1);
 
                 if (view.GetLength(0) > Console.BufferWidth)
                 {

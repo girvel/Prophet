@@ -12,12 +12,12 @@ namespace Prophet.Game.Facade
     {
         private static GameUi _current;
         public static GameUi Current = _current ?? (_current = Generate());
-
+        
 
         private const int 
-            WindowSizeX = 70, 
-            WindowSizeY = 20,
-            PanelSizeX = 20;
+            WindowSizeX = 120, 
+            WindowSizeY = 30,
+            PanelSizeX = 30;
         
         private static GameUi Generate()
         {
