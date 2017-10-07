@@ -1,8 +1,10 @@
 ﻿using System;
 using Prophet.Core;
 using Prophet.Core.Ai;
+using Prophet.Core.Behaviour;
 using Prophet.Core.Items;
 using Prophet.Core.Vector;
+using Prophet.Game.Ai;
 
 namespace Prophet.Game.Facade
 {
@@ -29,9 +31,15 @@ namespace Prophet.Game.Facade
             scene.AddCharacter(Player.Current);
             scene.AddCharacter(new Character
             {
-                Appearance = new ColoredCharacter('e', ConsoleColor.Red), 
+                Appearance         = new ColoredCharacter('e', ConsoleColor.Red), 
                 DeadBodyAppearance = new ColoredCharacter('$', ConsoleColor.DarkYellow),
-                Behaviour = new EnemyAi(), 
+                Behaviour = new NeedsBehaviour
+                {
+                    Needs = new Need[]
+                    {
+                        new BloodNeed{SearchRange = 5,}, 
+                    },
+                },
                 Damage = 10, 
                 Health = 25, 
                 Position = new Vector3(2, 2, 0),

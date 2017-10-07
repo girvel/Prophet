@@ -41,7 +41,10 @@ namespace Prophet.Core
         
         public virtual void Step()
         {
-            Behaviour.Step(this);
+            if (IsAlive)
+            {
+                Behaviour.Step(this);
+            }
         }
 
         public virtual bool TryMove(Vector3 to)

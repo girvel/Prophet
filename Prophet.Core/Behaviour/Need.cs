@@ -4,11 +4,11 @@ namespace Prophet.Core.Behaviour
 {
     public abstract class Need
     {
-        public string Name { get; set; }
+        public abstract string Name { get; }
+        
+        public abstract float StepDelta { get; }
         
         public float Value { get; set; }
-        
-        public float StepDelta { get; set; }
 
 
 

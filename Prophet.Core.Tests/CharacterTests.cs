@@ -53,6 +53,20 @@ namespace Prophet.Core.Tests
         }
         
         [Test]
+        public void Step_DoesNotCallStepOfBehaviourIfCharacterIsDead()
+        {
+            // arrange
+            var behaviourMock = new Mock<IBehaviour>();
+            var character = new Character {Behaviour = behaviourMock.Object, Health = 0};
+            
+            // act
+            character.Step();
+            
+            // assert
+            behaviourMock.Verify(b => b.Step(character), Times.Never);
+        }
+        
+        [Test]
         public void TryMove_ReturnsFalseIfThereIsNoPlace()
         {
             // arrange

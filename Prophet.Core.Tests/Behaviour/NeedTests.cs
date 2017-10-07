@@ -10,7 +10,7 @@ namespace Prophet.Core.Tests.Behaviour
         public void Step_IncreasesValueByDelta()
         {
             // arrange
-            var need = new NeedRealization{Value = 0, StepDelta = 0.5f,};
+            var need = new NeedRealization{Value = 0};
             
             // act
             need.Step(null);
@@ -37,7 +37,11 @@ namespace Prophet.Core.Tests.Behaviour
         private class NeedRealization : Need
         {
             public bool WasSatisfyCalled = false;
-            
+
+            public override string Name => "";
+        
+            public override float StepDelta => 0.5f;
+
             public override void Satisfy(Character character)
             {
                 WasSatisfyCalled = true;
