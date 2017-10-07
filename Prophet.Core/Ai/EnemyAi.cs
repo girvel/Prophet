@@ -1,4 +1,5 @@
-﻿using Prophet.Core.Extensions;
+﻿using Prophet.Core.Behaviour;
+using Prophet.Core.Extensions;
 
 namespace Prophet.Core.Ai
 {

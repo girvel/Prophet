@@ -48,6 +48,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behaviour\NeedsBehaviourTests.cs" />
+    <Compile Include="Behaviour\NeedTests.cs" />
     <Compile Include="CharacterTests.cs" />
     <Compile Include="Extensions\SceneHelperTests.cs" />
     <Compile Include="Items\InventoryTests.cs" />

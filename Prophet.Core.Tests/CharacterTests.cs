@@ -1,6 +1,7 @@
 ﻿using System;
 using Moq;
 using NUnit.Framework;
+using Prophet.Core.Behaviour;
 using Prophet.Core.Vector;
 
 namespace Prophet.Core.Tests

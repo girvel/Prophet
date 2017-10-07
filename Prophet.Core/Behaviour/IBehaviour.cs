@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Prophet.Core
+namespace Prophet.Core.Behaviour
 {
     public interface IBehaviour : ICloneable
     {

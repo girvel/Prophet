@@ -40,12 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ai\EnemyAi.cs" />
+    <Compile Include="Behaviour\IBehaviour.cs" />
+    <Compile Include="Behaviour\Need.cs" />
+    <Compile Include="Behaviour\NeedsBehaviour.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="ColoredCharacter.cs" />
     <Compile Include="Decoration.cs" />
     <Compile Include="Extensions\SceneHelper.cs" />
     <Compile Include="GameObject.cs" />
-    <Compile Include="IBehaviour.cs" />
     <Compile Include="Items\Inventory.cs" />
     <Compile Include="Items\Item.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

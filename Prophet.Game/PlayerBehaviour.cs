@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Xml.Schema;
 using Prophet.Core;
+using Prophet.Core.Behaviour;
 using Prophet.Core.Extensions;
 using Prophet.Core.Vector;
 using Prophet.Game.Facade;

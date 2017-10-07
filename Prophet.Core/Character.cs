@@ -1,4 +1,5 @@
 ﻿using System;
+using Prophet.Core.Behaviour;
 using Prophet.Core.Items;
 using Prophet.Core.Vector;
 
