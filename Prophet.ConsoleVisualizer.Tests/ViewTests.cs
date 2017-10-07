@@ -1,6 +1,7 @@
 ﻿using System;
 using Moq;
 using NUnit.Framework;
+using Prophet.ConsoleVisualizer.Interface.Elements;
 using Prophet.Core;
 using Prophet.Core.Vector;
 

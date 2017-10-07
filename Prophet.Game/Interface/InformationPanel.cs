@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Prophet.ConsoleVisualizer;
 using Prophet.ConsoleVisualizer.Interface;
+using Prophet.ConsoleVisualizer.Interface.Elements;
 using Prophet.Core;
 using Prophet.Core.Vector;
 

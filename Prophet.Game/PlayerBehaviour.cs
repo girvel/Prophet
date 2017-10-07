@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Schema;
 using Prophet.Core;
 using Prophet.Core.Extensions;
 using Prophet.Core.Vector;
@@ -38,6 +39,17 @@ namespace Prophet.Game
                 [ConsoleKey.DownArrow] = player =>
                 {
                     Ui.Current.Panel.InventoryIndicator.MoveSelection(1);
+                },
+                [ConsoleKey.F] = player =>
+                {
+                    var inventoryIndicator = Ui.Current.Panel.InventoryIndicator;
+                    
+                    if (inventoryIndicator.Subject != player)
+                    {
+                        player.Inventory.Take(
+                            inventoryIndicator.Subject.Inventory, 
+                            inventoryIndicator.SelectedItem);
+                    }
                 },
             };
         

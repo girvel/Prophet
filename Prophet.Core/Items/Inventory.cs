@@ -11,6 +11,11 @@ namespace Prophet.Core.Items
 
         public virtual void Take(Inventory from, Item item)
         {
+            if (item == null)
+            {
+                return;
+            }
+            
             from.PassiveItems.Remove(item);
             PassiveItems.Add(item);
         }

@@ -3,7 +3,7 @@ using System.Linq;
 using Prophet.Core;
 using Prophet.Core.Vector;
 
-namespace Prophet.ConsoleVisualizer.Interface
+namespace Prophet.ConsoleVisualizer.Interface.Elements
 {
     public abstract class Indicator : IPositionedUiElement
     {

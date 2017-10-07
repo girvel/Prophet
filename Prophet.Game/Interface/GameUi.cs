@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Prophet.ConsoleVisualizer;
 using Prophet.ConsoleVisualizer.Interface;
+using Prophet.ConsoleVisualizer.Interface.Elements;
 using Prophet.Core;
 
 namespace Prophet.Game.Interface

@@ -1,9 +1,7 @@
-﻿using System;
-using Prophet.ConsoleVisualizer.Interface;
-using Prophet.Core;
+﻿using Prophet.Core;
 using Prophet.Core.Vector;
 
-namespace Prophet.ConsoleVisualizer
+namespace Prophet.ConsoleVisualizer.Interface.Elements
 {
     public class View : IUiElement
     {
