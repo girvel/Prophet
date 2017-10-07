@@ -23,11 +23,21 @@ namespace Prophet.Game
             {
                 [ConsoleKey.E] = player =>
                 {
-                    Ui.Current.Panel.SetInventorySubject(
-                        player.Scene.FindNearestCharacter(
-                            player.Position, 
-                            1, 
-                            c => true));
+                    Ui.Current.Panel.InventoryIndicator.Subject =
+                        Ui.Current.Panel.InventoryIndicator.Subject == player
+                            ? player.Scene.FindNearestCharacter(
+                                player.Position,
+                                1,
+                                c => true)
+                            : player;
+                },
+                [ConsoleKey.UpArrow] = player =>
+                {
+                    Ui.Current.Panel.InventoryIndicator.MoveSelection(-1);
+                },
+                [ConsoleKey.DownArrow] = player =>
+                {
+                    Ui.Current.Panel.InventoryIndicator.MoveSelection(1);
                 },
             };
         
@@ -37,17 +47,17 @@ namespace Prophet.Game
         {
             var key = Console.ReadKey(true);
             
-            Ui.Current.Panel.SetInventorySubject(character);
-            Ui.Current.Panel.SetEnemy(null);
+            Ui.Current.Panel.EnemyIndicator.Enemy = null;
             
             if (_movingKeys.TryGetValue(key.Key, out Vector3 delta))
             {
+                Ui.Current.Panel.InventoryIndicator.Subject = character;
                 if (!character.TryMove(character.Position + delta))
                 {
                     var enemy = character.Scene.GetCharacterAt(character.Position + delta);
                     if (character.TryAttack(enemy))
                     {
-                        Ui.Current.Panel.SetEnemy(enemy);
+                        Ui.Current.Panel.EnemyIndicator.Enemy = enemy;
                     }
                 }
             }
@@ -57,6 +67,6 @@ namespace Prophet.Game
             }
         }
 
-        public object Clone() => new PlayerBehaviour();
+        public object Clone() => MemberwiseClone();
     }
 }

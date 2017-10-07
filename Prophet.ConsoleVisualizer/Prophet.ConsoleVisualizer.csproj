@@ -48,6 +48,7 @@
     <Compile Include="Interface\IUiElement.cs" />
     <Compile Include="Interface\PanelBackground.cs" />
     <Compile Include="Interface\UiComplex.cs" />
+    <Compile Include="Interface\UiList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View.cs" />
     <Compile Include="ViewingHelper.cs" />

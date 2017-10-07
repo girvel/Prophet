@@ -12,9 +12,9 @@ namespace Prophet.Game.Interface
     {
         private readonly UiComplex _complex;
 
-        private readonly EnemyIndicator _enemyIndicator;
+        public readonly EnemyIndicator EnemyIndicator;
 
-        private readonly InventoryIndicator _inventoryIndicator;
+        public readonly InventoryIndicator InventoryIndicator;
         
         
         
@@ -28,34 +28,31 @@ namespace Prophet.Game.Interface
         public InformationPanel(Character subject, Vector2 size)
         {
             Size = size;
+            
+            EnemyIndicator = new EnemyIndicator();
+            InventoryIndicator = new InventoryIndicator {Subject = subject,};
 
-            _enemyIndicator = new EnemyIndicator {Position = new Vector2(2, 1),};
-            _inventoryIndicator = new InventoryIndicator {Position = new Vector2(2, 6), Subject = subject,};
+            var list = new UiList
+            {
+                DisplayingQueue = new List<IPositionedUiElement>
+                {
+                    EnemyIndicator,
+                    new CharacteristicsIndicator {Subject = subject,},
+                    InventoryIndicator,
+                },
+                Indentiation = 1,
+                Position = new Vector2(1, 1),
+            };
             
             _complex = new UiComplex
             {
                 Background = new PanelBackground{BorderColor = ConsoleColor.White, Size = size,},
-                DisplayingQueue = new List<IPositionedUiElement>
-                {
-                    new CharacteristicsIndicator {Position = new Vector2(2, 3), Subject = subject,},
-                    _enemyIndicator,
-                    _inventoryIndicator,
-                },
+                DisplayingQueue = new List<IPositionedUiElement>{list,},
             };
         }
 
         
         
-        public void SetEnemy(Character enemy)
-        {
-            _enemyIndicator.Enemy = enemy;
-        }
-
-        public void SetInventorySubject(Character subject)
-        {
-            _inventoryIndicator.Subject = subject;
-        }
-
         public ColoredCharacter[,] GetCurrentView() => _complex.GetCurrentView();
     }
 }

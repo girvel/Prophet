@@ -13,11 +13,9 @@ namespace Prophet.Game.Interface
 
         protected override string[] GetContent()
         {
-            return Enemy == null
-                ? new string[0]
-                : new[]
+            return new[]
                 {
-                    $"{Enemy.Name}({Enemy.Health})",
+                    Enemy != null ? $"{Enemy.Name}({Enemy.Health})" : "",
                 };
         }
     }
